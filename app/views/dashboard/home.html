@@ -1,0 +1,18 @@
+<div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Dashboard</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <stats number={{comment}} comments="New comments!" colour="primary" type="comments" style="cursor: pointer" ng-click="getData('comment')"></stats>
+        <stats number={{task}} comments="New tasks!" colour="primary" style="cursor: pointer" type="user"ng-click="getData('task');"></stats>
+        <stats number={{order}} comments="New orders!" colour="yellow" style="cursor: pointer" type="shopping-cart" ng-click="getData('orders');"></stats>
+        <stats number={{ticket}} comments="Support tickets!" colour="red" style="cursor: pointer" type="support" ng-click="getData('tickets');"></stats>
+    </div>
+    
+    <!-- /.panel -->
+   
+</div>

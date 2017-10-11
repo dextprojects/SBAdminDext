@@ -1,0 +1,67 @@
+<div class="container-fluid" align="center">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header">Register</h1>
+		</div>
+		<!-- /.col-lg-12 -->
+	</div>
+	<!-- /.row -->
+</div>
+
+		<div class="row">
+		    <div class="col-md-6 col-md-offset-3" >
+		        <div class="panel panel-default">
+		            <div class="panel-body">
+		                <div class="row">
+		                    <div class="col-lg-6">
+		                        <form role="form">
+		                            <div class="form-group">
+		                                <label>Name</label>
+		                                <input class="form-control" placeholder="Enter Name" ng-model="name">
+		                            </div>
+																<div class="form-group">
+		                                <label>Age</label>
+		                                <input class="form-control" placeholder="Enter Age" ng-model="age">
+		                            </div>
+																<div class="form-group">
+		                                <label>Gender</label>
+		                                <div class="radio">
+		                                    <label>
+		                                        <input type="radio" name="optionsRadios" id="optionsRadios1" ng-model="gender" value="Male" checked>Male
+		                                    </label>
+		                                </div>
+		                                <div class="radio">
+		                                    <label>
+		                                        <input type="radio" name="optionsRadios" id="optionsRadios2" ng-model="gender" value="Female">Female
+		                                    </label>
+		                                </div>
+		                            </div>
+																<div class="form-group">
+		                                <label>Address</label>
+		                                <input class="form-control" placeholder="Enter Address" ng-model="address">
+		                            </div>
+																<div class="form-group">
+		                                <label>Email</label>
+		                                <input class="form-control" placeholder="Enter Email" ng-model="email">
+		                            </div>
+																<div class="form-group">
+		                                <label>Password</label>
+		                                <input type="password" class="form-control" placeholder="Enter Password" ng-model="password">
+		                            </div>
+																<button type="submit" ng-click="submit()" class="btn btn-outline btn-primary">Submit</button>
+																<button type="reset" class="btn btn-outline btn-default">Reset</button>
+																<h5 ng-bind="status" id="status"></h5>
+																<hr>
+																<a ui-sref="login" class="btn btn-success btn-block">Login</a>
+		                        </form>
+		                    </div>
+		                    <!-- /.col-lg-6 (nested) -->
+		                </div>
+		                <!-- /.row (nested) -->
+		            </div>
+		            <!-- /.panel-body -->
+		        </div>
+		        <!-- /.panel -->
+		    </div>
+		    <!-- /.col-lg-12 -->
+		</div>
